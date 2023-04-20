@@ -1,0 +1,11 @@
+version: "2"
+services:
+  web:
+    container_name: brother-bird
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    environment:
+      NODE_ENV: production
